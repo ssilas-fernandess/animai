@@ -10,12 +10,13 @@ import { motion } from 'framer-motion'
 import { Link } from './link'
 import { Logo } from './logo'
 import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
+import {useRouter} from "next/router";
 
 const links: { href: string; label: string }[] = [
-  //{ href: '/pricing', label: 'Pricing' },
-  //{ href: '/company', label: 'Company' },
-  //{ href: '/blog', label: 'Blog' },
-  //{ href: '/login', label: 'Login' },
+  { href: '/', label: 'INICIO' },
+  { href: '/exposicao', label: 'EXPOSIÇÃO' },
+  { href: '/curadores', label: 'CURADORES' },
+  { href: '/o-festival', label: 'O FESTIVAL' },
 ]
 
 function DesktopNav() {
@@ -77,7 +78,7 @@ function MobileNav() {
 
 export function Navbar({ banner }: { banner?: React.ReactNode }) {
   return (
-    <Disclosure as="header" className="pt-12 sm:pt-16">
+    <Disclosure as="header" className="pt-6 sm:pt-8">
       <PlusGrid>
         <PlusGridRow className="relative flex justify-between">
           <div className="relative flex gap-6">

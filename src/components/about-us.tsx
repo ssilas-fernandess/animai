@@ -2,59 +2,26 @@
 
 import { Container } from "@/components/container";
 import { Heading } from "@/components/text";
-
-const values = [
-    {
-        name: 'Be world-class',
-        description:
-            'Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.',
-    },
-    {
-        name: 'Share everything you know',
-        description:
-            'Mollitia delectus a omnis. Quae velit aliquid. Qui nulla maxime adipisci illo id molestiae. Cumque cum ut minus rerum architecto magnam consequatur. Quia quaerat minima.',
-    },
-    {
-        name: 'Always learning',
-        description:
-            'Aut repellendus et officiis dolor possimus. Deserunt velit quasi sunt fuga error labore quia ipsum. Commodi autem voluptatem nam. Quos voluptatem totam.',
-    },
-    {
-        name: 'Be supportive',
-        description:
-            'Magnam provident veritatis odit. Vitae eligendi repellat non. Eum fugit impedit veritatis ducimus. Non qui aspernatur laudantium modi. Praesentium rerum error deserunt harum.',
-    },
-    {
-        name: 'Take responsibility',
-        description:
-            'Sit minus expedita quam in ullam molestiae dignissimos in harum. Tenetur dolorem iure. Non nesciunt dolorem veniam necessitatibus laboriosam voluptas perspiciatis error.',
-    },
-    {
-        name: 'Enjoy downtime',
-        description:
-            'Ipsa in earum deserunt aut. Quos minus aut animi et soluta. Ipsum dicta ut quia eius. Possimus reprehenderit iste aspernatur ut est velit consequatur distinctio.',
-    },
-]
+import {ChevronRightIcon} from "@heroicons/react/16/solid";
+import {Link} from "@/components/link";
 
 export default function AboutUs() {
     return (
         <div className="overflow-hidden">
             <Container className="pb-24">
                 <Heading as="h2" className="max-w-3xl">
-                    Quem Somos
+                    O Festival
                 </Heading>
                 <p className="mt-6 text-lg/8 text-gray-600">
-                    Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis
-                    in accusamus quisquam.
+                    O Animaí! - VI Festival Baiano de Animação e Games é um evento pioneiro no estado com foco em animação e games e uma programação gratuita composta por workshops, palestras, seminários, exposições de artistas ilustradores e mostras competitivas de filmes de animação e jogos eletrônicos. Trata-se de um evento que acontece em Salvador e Itaparica, visando fortalecer o mercado, gerando oportunidades para os produtores e novos olhares do público consumidor, incluindo, também, mostras em espaços culturais da capital e do interior”, explica Aline Cléa, produtora da Cine Arts, diretora geral do Animaí e uma das curadoras do evento ao lado de Anderson Soares e Léo Silva, da Mantra Filmes.
+                    <a
+                      className={"bg-[linear-gradient(115deg,var(--tw-gradient-stops))] from-[#fff1be] from-[28%] via-[#ee87cb] via-[99%] to-[#b060ff] sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))] rounded-full px-3 py-0.5 text-black"}
+                      href={"https://atarde.com.br/cultura/vi-animai---festival-baiano-de-animacao-e-games-comeca-quinta-feira-1297647"}
+                      target={"_blank"}
+                    >
+                        Confira a Matéria aqui
+                    </a>
                 </p>
-                <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base/7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                    {values.map((value) => (
-                        <div key={value.name}>
-                            <dt className="font-semibold text-gray-900">{value.name}</dt>
-                            <dd className="mt-1 text-gray-600">{value.description}</dd>
-                        </div>
-                    ))}
-                </dl>
             </Container>
         </div>
     )
