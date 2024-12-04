@@ -8,13 +8,11 @@ import {
 import { Bars2Icon } from '@heroicons/react/24/solid'
 import { motion } from 'framer-motion'
 import { Link } from './link'
-import { Logo } from './logo'
 import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
-import {useRouter} from "next/router";
 
 const links: { href: string; label: string }[] = [
   { href: '/', label: 'INICIO' },
-  { href: '/exposicao', label: 'EXPOSIÇÃO' },
+  { href: '/exposicao-virtual', label: 'EXPOSIÇÃO VIRTUAL' },
   { href: '/curadores', label: 'CURADORES' },
   { href: '/o-festival', label: 'O FESTIVAL' },
 ]
