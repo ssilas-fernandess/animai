@@ -27,6 +27,7 @@ const events = [
     name: 'Rodada de Negócios com Plays de Animação e Games - Parceria Nordeste Lab',
     imageUrl: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cine Glauber Rocha',
+    locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
   {
     id: 3,
@@ -37,6 +38,7 @@ const events = [
     name: 'Painel - Mesa 04: Encontro com Publishers',
     imageUrl: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cine Glauber Rocha',
+    locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
   {
     id: 4,
@@ -47,6 +49,8 @@ const events = [
     name: 'Oficina: O Universo da Voz - Parceria Nina Produções',
     imageUrl: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cineteatro 2 de Julho',
+    locationUrl:'https://www.google.com/maps/place/Cineteatro+2+de+Julho/@-12.9971129,-38.5026572,17z/data=!3m1!4b1!4m6!3m5!1s0x7160500439c579f:0x7d4bd1c0b7a75821!8m2!3d-12.9971129!4d-38.5000823!16s%2Fg%2F11lmfpzsh0?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
+
   },
   {
     id: 5,
@@ -57,6 +61,7 @@ const events = [
     name: 'Palestra 03: Produção de Voz e Som para games - Parceria Nina Produções',
     imageUrl: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cineteatro 2 de Julho',
+    locationUrl:'https://www.google.com/maps/place/Cineteatro+2+de+Julho/@-12.9971129,-38.5026572,17z/data=!3m1!4b1!4m6!3m5!1s0x7160500439c579f:0x7d4bd1c0b7a75821!8m2!3d-12.9971129!4d-38.5000823!16s%2Fg%2F11lmfpzsh0?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
   {
     id: 6,
@@ -67,6 +72,7 @@ const events = [
     name: 'Palestra 02: Os Desafios de um Grande Festival',
     imageUrl: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cineteatro 2 de Julho',
+    locationUrl:'https://www.google.com/maps/place/Cineteatro+2+de+Julho/@-12.9971129,-38.5026572,17z/data=!3m1!4b1!4m6!3m5!1s0x7160500439c579f:0x7d4bd1c0b7a75821!8m2!3d-12.9971129!4d-38.5000823!16s%2Fg%2F11lmfpzsh0?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
   {
     id: 7,
@@ -77,6 +83,7 @@ const events = [
     name: 'Mostra Curtas Baianos',
     imageUrl: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cineteatro 2 de Julho',
+    locationUrl:'https://www.google.com/maps/place/Cineteatro+2+de+Julho/@-12.9971129,-38.5026572,17z/data=!3m1!4b1!4m6!3m5!1s0x7160500439c579f:0x7d4bd1c0b7a75821!8m2!3d-12.9971129!4d-38.5000823!16s%2Fg%2F11lmfpzsh0?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
   {
     id: 8,
@@ -87,6 +94,7 @@ const events = [
     name: 'Cerimônia de Abertura - Filme: A Arca de Noé',
     imageUrl: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cine Glauber Rocha',
+    locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
   {
     id: 9,
@@ -97,6 +105,7 @@ const events = [
     name: 'Sessão 03: Mostra Competitiva de Animação',
     imageUrl: 'https://images.unsplash.com/photo-1502764613149-7f1d229e230f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cine Glauber Rocha',
+    locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
   {
     id: 10,
@@ -106,6 +115,7 @@ const events = [
     name: 'Mostra Competitiva de Games',
     imageUrl: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cine Glauber Rocha',
+    locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
   {
     id: 11,
@@ -116,6 +126,7 @@ const events = [
     person: 'Ingressos e programação completa no local',
     imageUrl: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cine Glauber Rocha',
+    locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
   {
     id: 12,
@@ -126,6 +137,7 @@ const events = [
     person: 'Ingressos e programação completa no local',
     imageUrl: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cine Glauber Rocha',
+    locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
   {
     id: 13,
@@ -135,6 +147,7 @@ const events = [
     name: 'Mostra Competitiva de Games',
     imageUrl: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cine Glauber Rocha',
+    locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
   {
     id: 14,
@@ -145,6 +158,7 @@ const events = [
     person: 'Ingressos e programação completa no local',
     imageUrl: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cine Glauber Rocha',
+    locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
   {
     id: 15,
@@ -155,6 +169,7 @@ const events = [
     person: 'Ingressos e programação completa no local',
     imageUrl: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cine Glauber Rocha',
+    locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
   {
     id: 16,
@@ -165,6 +180,7 @@ const events = [
     person: 'Autor: Ricardo Araujo - Professores Orientadores: Paulo Miguel e Natacha Canesso',
     imageUrl: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cine Glauber Rocha',
+    locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
   {
     id: 17,
@@ -175,6 +191,7 @@ const events = [
     person: 'Ingressos e programação completa no local',
     imageUrl: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cine Glauber Rocha',
+    locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
   {
     id: 18,
@@ -185,6 +202,7 @@ const events = [
     person: 'Alê Machaddo (dr.)',
     imageUrl: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cine Glauber Rocha',
+    locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
   {
     id: 19,
@@ -194,6 +212,7 @@ const events = [
     name: 'Mostra Competitiva de Games',
     imageUrl: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cine Glauber Rocha',
+    locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
   {
     id: 20,
@@ -204,6 +223,7 @@ const events = [
     person: 'Ingressos e programação completa no local',
     imageUrl: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cine Glauber Rocha',
+    locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
   {
     id: 21,
@@ -214,9 +234,10 @@ const events = [
     person: 'Ingressos e programação completa no local',
     imageUrl: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cine Glauber Rocha',
+    locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
   {
-    id: 21,
+    id: 22,
     date: '08 de Dezembro, 2024',
     time: '18:00 ás 20:30',
     datetime: ['2024-12-08T18:00'],
@@ -224,15 +245,17 @@ const events = [
     person: 'Meu Tio José - Homenageado do Ano com a presença de Ducca Rios',
     imageUrl: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cine Glauber Rocha',
+    locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
   {
-    id: 22,
+    id: 23,
     date: '08 de Dezembro, 2024',
     time: '20:30 ás 22:00',
     datetime: ['2024-12-08T20:30'],
     name: 'Festa de Encerramento Animaí',
     imageUrl: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cine Glauber Rocha',
+    locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
 ];
 
@@ -398,7 +421,9 @@ export default function Events() {
                                   <span className="sr-only">Location</span>
                                   <MapPinIcon className="size-5 text-gray-400" aria-hidden="true"/>
                                 </dt>
-                                <dd>{event.location}</dd>
+                                <a href={event.locationUrl} target="_blank">
+                                  <dd>{event.location}</dd>
+                                </a>
                               </div>
                             </dl>
                           </div>
