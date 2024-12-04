@@ -13,7 +13,7 @@ import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
 const links: { href: string; label: string }[] = [
   { href: '/', label: 'INICIO' },
   { href: '/exposicao-virtual', label: 'EXPOSIÇÃO VIRTUAL' },
-  { href: '/curadores', label: 'CURADORES' },
+  //{ href: '/curadores', label: 'CURADORES' },
   { href: '/o-festival', label: 'O FESTIVAL' },
 ]
 
