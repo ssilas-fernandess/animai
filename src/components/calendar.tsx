@@ -472,7 +472,7 @@ export default function Events() {
                           <img
                               className="h-20"
                               alt="imagem"
-                              src="https://static.vecteezy.com/ti/vecteur-libre/p1/2318271-icone-de-profil-utilisateur-vectoriel.jpg"
+                              src="./logo.png"
                           />
                           <div className="flex-auto">
                             <h3 className="pr-10 font-semibold text-gray-900 xl:pr-0">{event.name}</h3>
