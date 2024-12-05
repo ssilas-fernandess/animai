@@ -21,9 +21,9 @@ const events = [
   },
   {
     id: 2,
-    date: 'De 04 a 06 de Dezembro, 2024',
+    date: 'De 04 a 06 de Dezembro, 2024', 'De 09:00 às 18:00h',
     datetime: ['2024-12-04T12:00', '2024-12-05T12:00', '2024-12-06T12:00'],
-    person: 'Murilo Brito - Pedro Henrique Coxa - Juliana Brito - Ivan Sendin',
+    person: 'Murilo Gonçalves (SBT Games) - Pedro Henrique Coxa (Tec Toy)- Juliana Brito (Indie Hero)- Ivan Sendin (Epopéia Games)',
     name: 'Rodada de Negócios com Plays de Animação e Games - Parceria Nordeste Lab',
     imageUrl: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cine Glauber Rocha',
@@ -31,10 +31,10 @@ const events = [
   },
   {
     id: 3,
-    date: 'De 05 á 07 de Dezembro, 2024',
-    time: '09:00 ás 12:00',
-    datetime: ['2024-12-05T09:00', '2024-12-06T09:00', '2024-12-07T09:00'],
-    person: 'Murilo Vallota Gonçalves - Pedro Henrique Coxa - Juliana Brito - Ivan Sendin',
+    date: '06 de Dezembro, 2024',
+    time: '09:00h às 10:00h',
+    datetime: ['2024-12-06T09:00'],
+    person: 'Murilo Gonçalves (SBT Games) - Pedro Henrique Coxa (Tec Toy)- Juliana Brito (Indie Hero)- Ivan Sendin (Epopéia Games)',
     name: 'Painel - Mesa 04: Encontro com Publishers',
     imageUrl: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cine Glauber Rocha',
@@ -98,9 +98,9 @@ const events = [
   },
   {
     id: 9,
-    date: '06 de Dezembro, 2024',
+    date: '07 de Dezembro, 2024',
     time: '19:00',
-    datetime: ['2024-12-06T19:00'],
+    datetime: ['2024-12-07T19:00'],
     person: 'Exibição do Longa: Bizarros Peixes das Fossas Abissais com Marcelo Marão',
     name: 'Sessão 03: Mostra Competitiva de Animação',
     imageUrl: 'https://images.unsplash.com/photo-1502764613149-7f1d229e230f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
@@ -116,6 +116,8 @@ const events = [
     imageUrl: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cine Glauber Rocha',
     locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
+    location: 'Cineteatro 2 de Julho',
+    locationUrl:'https://www.google.com/maps/place/Cineteatro+2+de+Julho/@-12.9971129,-38.5026572,17z/data=!3m1!4b1!4m6!3m5!1s0x7160500439c579f:0x7d4bd1c0b7a75821!8m2!3d-12.9971129!4d-38.5000823!16s%2Fg%2F11lmfpzsh0?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
   {
     id: 11,
@@ -150,19 +152,8 @@ const events = [
     locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
   {
-    id: 14,
-    date: '06 de Dezembro, 2024',
-    time: '14:00',
-    datetime: ['2024-12-07T14:00'],
-    name: 'Sessão 01: Mostra Competitiva de Animação',
-    person: 'Ingressos e programação completa no local',
-    imageUrl: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
-    location: 'Cine Glauber Rocha',
-    locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
-  },
-  {
     id: 15,
-    date: '06 de Dezembro, 2024',
+    date: '07 de Dezembro, 2024',
     time: '15:00',
     datetime: ['2024-12-07T15:00'],
     name: 'Sessão 02: Mostra Competitiva de Animação',
@@ -173,7 +164,7 @@ const events = [
   },
   {
     id: 16,
-    date: '06 de Dezembro, 2024',
+    date: '07 de Dezembro, 2024',
     time: '16:00',
     datetime: ['2024-12-07T15:00'],
     name: 'Lançamento do Livro - Panorama da Animação de Salvador',
@@ -183,19 +174,8 @@ const events = [
     locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
   {
-    id: 17,
-    date: '06 de Dezembro, 2024',
-    time: '17:00',
-    datetime: ['2024-12-07T17:00'],
-    name: 'Sessão 03: Mostra Competitiva de Animação',
-    person: 'Ingressos e programação completa no local',
-    imageUrl: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
-    location: 'Cine Glauber Rocha',
-    locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
-  },
-  {
     id: 18,
-    date: '06 de Dezembro, 2024',
+    date: '07 de Dezembro, 2024',
     time: '19:00',
     datetime: ['2024-12-07T17:00'],
     name: 'Sessão 04: Mostra Competitiva de Animação - Longa: A Lasanha Assassina ',
@@ -213,6 +193,8 @@ const events = [
     imageUrl: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cine Glauber Rocha',
     locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
+    location: 'Cineteatro 2 de Julho',
+    locationUrl:'https://www.google.com/maps/place/Cineteatro+2+de+Julho/@-12.9971129,-38.5026572,17z/data=!3m1!4b1!4m6!3m5!1s0x7160500439c579f:0x7d4bd1c0b7a75821!8m2!3d-12.9971129!4d-38.5000823!16s%2Fg%2F11lmfpzsh0?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
   {
     id: 20,
@@ -256,6 +238,85 @@ const events = [
     imageUrl: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
     location: 'Cine Glauber Rocha',
     locationUrl: 'https://www.google.com/maps/place/Cine+Glauber+Rocha/@-12.9772187,-38.5169015,17z/data=!3m1!4b1!4m6!3m5!1s0x71604ee7a0a4d39:0xe4c0721bb5b739d9!8m2!3d-12.9772187!4d-38.5143266!16s%2Fg%2F1tgdtbbn?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
+  },
+  {
+    id: 24,
+    date: '06 de Dezembro, 2024',
+    time: '10:20min às 12:00h',
+    datetime: ['2024-12-06T09:00'],
+    person: 'Sandra Rosa',
+    name: 'Palestra 04: Audiodescrição para o audiovisual com Sandra Rosa',
+    imageUrl: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
+    location: 'Cineteatro 2 de Julho',
+    locationUrl:'https://www.google.com/maps/place/Cineteatro+2+de+Julho/@-12.9971129,-38.5026572,17z/data=!3m1!4b1!4m6!3m5!1s0x7160500439c579f:0x7d4bd1c0b7a75821!8m2!3d-12.9971129!4d-38.5000823!16s%2Fg%2F11lmfpzsh0?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
+  },
+  {
+    id: 25,
+    date: '06 de Dezembro, 2024',
+    time: '14:00h às 15:30min',
+    datetime: ['2024-12-06T09:00'],
+    person: 'Antônia Pellegrino - Diretora de Conteúdo e Programação da EBC, Flavio Gonçalves  - Diretor do Irdeb ',
+    person: 'Mediação: Léo Silva',
+    name: 'Painel- Mesa 05: A Importância das animações nas TV`s Públicas como Formação da identidade desde a Infância',
+    imageUrl: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
+    location: 'Cineteatro 2 de Julho',
+    locationUrl:'https://www.google.com/maps/place/Cineteatro+2+de+Julho/@-12.9971129,-38.5026572,17z/data=!3m1!4b1!4m6!3m5!1s0x7160500439c579f:0x7d4bd1c0b7a75821!8m2!3d-12.9971129!4d-38.5000823!16s%2Fg%2F11lmfpzsh0?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
+  },
+  {
+    id: 26,
+    date: '06 de Dezembro, 2024',
+    time: '14:00h às 15:30min',
+    datetime: ['2024-12-06T09:00'],
+    person: 'Antônia Pellegrino - Diretora de Conteúdo e Programação da EBC, Flavio Gonçalves  - Diretor do Irdeb ',
+    person: 'Mediação: Léo Silva',
+    name: 'Painel- Mesa 05: A Importância das animações nas TV`s Públicas como Formação da identidade desde a Infância',
+    imageUrl: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
+    location: 'Cineteatro 2 de Julho',
+    locationUrl:'https://www.google.com/maps/place/Cineteatro+2+de+Julho/@-12.9971129,-38.5026572,17z/data=!3m1!4b1!4m6!3m5!1s0x7160500439c579f:0x7d4bd1c0b7a75821!8m2!3d-12.9971129!4d-38.5000823!16s%2Fg%2F11lmfpzsh0?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
+  },
+  {
+    id: 27,
+    date: '06 de Dezembro, 2024',
+    time: '16:00h às 17:00h',
+    datetime: ['2024-12-06T09:00'],
+    person: ' Rogério Machado - Papo de Cinemateca, Francisco Carbone - Cenas de Cinema e Jéssica Malta - Jornal O Tempo',
+    name: 'Palestra 07: A História da Animação e dos Games através do olhar de quem Comunica',
+    imageUrl: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
+    location: 'Cineteatro 2 de Julho',
+    locationUrl:'https://www.google.com/maps/place/Cineteatro+2+de+Julho/@-12.9971129,-38.5026572,17z/data=!3m1!4b1!4m6!3m5!1s0x7160500439c579f:0x7d4bd1c0b7a75821!8m2!3d-12.9971129!4d-38.5000823!16s%2Fg%2F11lmfpzsh0?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
+  },
+  {
+    id: 28,
+    date: '06 de Dezembro, 2024',
+    time: '17:00h às 18:00h',
+    datetime: ['2024-12-06T09:00'],
+    person: ' Alê Mchaddo',
+    name: 'Workshop 09: “Workchopp”',
+    imageUrl: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
+    location: 'Cineteatro 2 de Julho',
+    locationUrl:'https://www.google.com/maps/place/Cineteatro+2+de+Julho/@-12.9971129,-38.5026572,17z/data=!3m1!4b1!4m6!3m5!1s0x7160500439c579f:0x7d4bd1c0b7a75821!8m2!3d-12.9971129!4d-38.5000823!16s%2Fg%2F11lmfpzsh0?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
+  },
+  {
+    id: 29,
+    date: '06 de Dezembro, 2024',
+    time: '17:00h às 18:00h',
+    datetime: ['2024-12-06T09:00'],
+    person: ' Alê Mchaddo',
+    name: 'Workshop 09: “Workchopp”',
+    imageUrl: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
+    location: 'Cineteatro 2 de Julho',
+    locationUrl:'https://www.google.com/maps/place/Cineteatro+2+de+Julho/@-12.9971129,-38.5026572,17z/data=!3m1!4b1!4m6!3m5!1s0x7160500439c579f:0x7d4bd1c0b7a75821!8m2!3d-12.9971129!4d-38.5000823!16s%2Fg%2F11lmfpzsh0?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
+  },
+  {
+    id: 30,
+    date: '07 de Dezembro, 2024',
+    time: '17:00h às 18:00h',
+    datetime: ['2024-12-07T09:00'],
+    person: ' Alê Mchaddo',
+    name: 'Workshop 09: “Workchopp”',
+    imageUrl: 'https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80',
+    location: 'Cineteatro 2 de Julho',
+    locationUrl:'https://www.google.com/maps/place/Cineteatro+2+de+Julho/@-12.9971129,-38.5026572,17z/data=!3m1!4b1!4m6!3m5!1s0x7160500439c579f:0x7d4bd1c0b7a75821!8m2!3d-12.9971129!4d-38.5000823!16s%2Fg%2F11lmfpzsh0?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D',
   },
 ];
 
@@ -398,7 +459,7 @@ export default function Events() {
                           <img
                               className="h-20"
                               alt="imagem"
-                              src="/logo.png"
+                              src="https://static.vecteezy.com/ti/vecteur-libre/p1/2318271-icone-de-profil-utilisateur-vectoriel.jpg"
                           />
                           <div className="flex-auto">
                             <h3 className="pr-10 font-semibold text-gray-900 xl:pr-0">{event.name}</h3>
@@ -422,7 +483,7 @@ export default function Events() {
                                   <MapPinIcon className="size-5 text-gray-400" aria-hidden="true"/>
                                 </dt>
                                 <a href={event.locationUrl} target="_blank">
-                                  <dd>{event.location}</dd>
+                                <dd>{event.location}</dd>
                                 </a>
                               </div>
                             </dl>
