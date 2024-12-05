@@ -1302,6 +1302,11 @@
   resolved "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-14.2.11.tgz"
   integrity sha512-a0TH4ZZp4NS0LgXP/488kgvWelNpwfgGTUCDXVhPGH6pInb7yIYNgM4kmNWOxBFt+TIuOH6Pi9NnGG4XWFUyXQ==
 
+"@next/swc-linux-x64-musl@14.2.11":
+  version "14.2.11"
+  resolved "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-14.2.11.tgz"
+  integrity sha512-DYYZcO4Uir2gZxA4D2JcOAKVs8ZxbOFYPpXSVIgeoQbREbeEHxysVsg3nY4FrQy51e5opxt5mOHl/LzIyZBoKA==
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz"
@@ -5526,7 +5531,7 @@ next-sanity@^9.4.7:
     groq "^3.65.1"
     history "^5.3.0"
 
-"next@^14.1 || ^15.0.0-0", "next@^14.2 || ^15.0.0-0", "next@>= 13 || >=14.3.0-canary.0 <14.3.0 || >=15.0.0-rc", next@14.2.11:
+"next@^14.1 || ^15.0.0-0", "next@^14.2 || ^15.0.0-0", next@^14.2.11, "next@>= 13 || >=14.3.0-canary.0 <14.3.0 || >=15.0.0-rc":
   version "14.2.11"
   resolved "https://registry.npmjs.org/next/-/next-14.2.11.tgz"
   integrity sha512-8MDFqHBhdmR2wdfaWc8+lW3A/hppFe1ggQ9vgIu/g2/2QEMYJrPoQP6b+VNk56gIug/bStysAmrpUKtj3XN8Bw==
