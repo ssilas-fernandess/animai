@@ -323,7 +323,7 @@ const events = [
   {
     id: 31,
     date: '08 de Dezembro, 2024',
-    time: '16:00min às 17:40min',
+    time: '16:00h às 17:30min',
     datetime: ['2024-12-08T09:00'],
     person: 'Ingressos e programação completa no local',
     name: 'Mostra de Animação - Longa: Bizarros peixes das Fossas Abissais com a presença do Diretor Marcelo Marão',
