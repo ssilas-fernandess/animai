@@ -338,43 +338,104 @@ function classNames(...classes: any) {
 }
 
 export default function Events() {
-    const [days, setDays] = useState([
-      { date: '2024-12-01', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2024-12-02', isCurrentMonth: true, isSelected: false, isToday: false },
-      { date: '2024-12-03', isCurrentMonth: true, isSelected: false, isToday: false },
-      { date: '2024-12-04', isCurrentMonth: true, isSelected: false, isToday: false },
-      { date: '2024-12-05', isCurrentMonth: true, isSelected: false, isToday: false },
-      { date: '2024-12-06', isCurrentMonth: true, isSelected: false, isToday: false },
-      { date: '2024-12-07', isCurrentMonth: true, isSelected: false, isToday: false },
-      { date: '2024-12-08', isCurrentMonth: true, isSelected: false, isToday: false },
-      { date: '2024-12-09', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2024-12-10', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2024-12-11', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2024-12-12', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2024-12-13', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2024-12-14', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2024-12-15', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2024-12-16', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2024-12-17', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2024-12-18', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2024-12-19', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2024-12-20', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2024-12-21', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2024-12-22', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2024-12-23', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2024-12-24', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2024-12-25', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2024-12-26', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2024-12-27', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2024-12-28', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2024-12-29', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2024-12-30', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2024-12-31', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2022-01-01', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2022-01-02', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2022-01-03', isCurrentMonth: false, isSelected: false, isToday: false },
-      { date: '2022-01-04', isCurrentMonth: false, isSelected: false, isToday: false },
-    ]);
+    // Criar array de dias com eventos
+    const eventDays = events.reduce((acc: string[], event: any) => {
+      event.datetime.forEach((datetime: string) => {
+        const day = datetime.split('T')[0];
+        if (!acc.includes(day)) {
+          acc.push(day);
+        }
+      });
+      return acc;
+    }, []);
+
+    const [currentMonth, setCurrentMonth] = useState(10); // Outubro
+    const [currentYear, setCurrentYear] = useState(2025);
+
+    const monthNames = [
+      'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
+      'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
+    ];
+
+    const goToPreviousMonth = () => {
+      if (currentMonth === 1) {
+        setCurrentMonth(12);
+        setCurrentYear(currentYear - 1);
+      } else {
+        setCurrentMonth(currentMonth - 1);
+      }
+    };
+
+    const goToNextMonth = () => {
+      if (currentMonth === 12) {
+        setCurrentMonth(1);
+        setCurrentYear(currentYear + 1);
+      } else {
+        setCurrentMonth(currentMonth + 1);
+      }
+    };
+
+    const goToOctober2025 = () => {
+      setCurrentMonth(10);
+      setCurrentYear(2025);
+    };
+
+    const generateDaysForMonth = (month: number, year: number) => {
+      const days = [];
+      const firstDay = new Date(year, month - 1, 1);
+      const lastDay = new Date(year, month, 0);
+      const startDate = new Date(firstDay);
+      startDate.setDate(startDate.getDate() - firstDay.getDay());
+
+      // Adicionar dias do mês anterior para completar a primeira semana
+      for (let i = 0; i < firstDay.getDay(); i++) {
+        const prevDate = new Date(startDate);
+        prevDate.setDate(startDate.getDate() + i);
+        days.push({
+          date: prevDate.toISOString().split('T')[0],
+          isCurrentMonth: false,
+          isSelected: false,
+          isToday: false,
+          hasEvent: false
+        });
+      }
+
+      // Adicionar todos os dias do mês atual
+      for (let day = 1; day <= lastDay.getDate(); day++) {
+        const date = new Date(year, month - 1, day);
+        const dateString = date.toISOString().split('T')[0];
+        const isEventDay = month === 10 && year === 2025 && day >= 8 && day <= 25;
+        
+        days.push({
+          date: dateString,
+          isCurrentMonth: true,
+          isSelected: false,
+          isToday: false,
+          hasEvent: isEventDay
+        });
+      }
+
+      // Adicionar dias do próximo mês para completar a última semana
+      const remainingDays = 42 - days.length; // 6 semanas x 7 dias
+      for (let i = 1; i <= remainingDays; i++) {
+        const nextDate = new Date(year, month, i);
+        days.push({
+          date: nextDate.toISOString().split('T')[0],
+          isCurrentMonth: false,
+          isSelected: false,
+          isToday: false,
+          hasEvent: false
+        });
+      }
+
+      return days;
+    };
+
+    const [days, setDays] = useState(generateDaysForMonth(10, 2025));
+
+    useEffect(() => {
+      setDays(generateDaysForMonth(currentMonth, currentYear));
+    }, [currentMonth, currentYear]);
 
     useEffect(() => {
       const today = new Date()
@@ -414,13 +475,45 @@ export default function Events() {
   return (
       <div className="overflow-hidden">
         <Container className="pb-24">
-          <Heading as="h2" className="max-w-3xl">
-            Programação
-          </Heading>
           <div>
             <div className="lg:grid lg:grid-cols-12 lg:gap-x-16">
               <div className="mt-10 text-center lg:col-start-8 lg:col-end-13 lg:row-start-1 lg:mt-9 xl:col-start-9">
-                Dezembro
+                {/* Navegação entre meses */}
+                <div className="flex items-center justify-between mb-4">
+                  <button
+                    onClick={goToPreviousMonth}
+                    className="p-2 text-gray-600 hover:text-purple-600 transition-colors"
+                    title="Mês anterior"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                    </svg>
+                  </button>
+                  
+                  <div className="flex flex-col items-center">
+                    <h3 className="text-xl font-semibold text-gray-900">
+                      {monthNames[currentMonth - 1]} {currentYear}
+                    </h3>
+                    {currentMonth !== 10 || currentYear !== 2025 ? (
+                      <button
+                        onClick={goToOctober2025}
+                        className="text-sm text-purple-600 hover:text-purple-800 mt-1 underline"
+                      >
+                        Voltar para Outubro 2025
+                      </button>
+                    ) : null}
+                  </div>
+                  
+                  <button
+                    onClick={goToNextMonth}
+                    className="p-2 text-gray-600 hover:text-purple-600 transition-colors"
+                    title="Próximo mês"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
+                </div>
                 <div className="mt-6 grid grid-cols-7 text-xs/6 text-gray-500">
                   <div>D</div>
                   <div>S</div>
@@ -442,13 +535,16 @@ export default function Events() {
                               day.isCurrentMonth ? 'bg-white' : 'bg-gray-50',
                               (day.isSelected || day.isToday) && 'font-semibold',
                               day.isSelected && 'text-white',
-                              !day.isSelected && day.isCurrentMonth && !day.isToday && 'text-gray-900',
-                              !day.isSelected && !day.isCurrentMonth && !day.isToday && 'text-gray-400',
+                              !day.isSelected && day.isCurrentMonth && !day.isToday && day.hasEvent && 'text-gray-900',
+                              !day.isSelected && day.isCurrentMonth && !day.isToday && !day.hasEvent && 'text-gray-400',
+                              !day.isSelected && !day.isCurrentMonth && !day.isToday && 'text-gray-300',
                               day.isToday && !day.isSelected && 'text-indigo-600',
                               dayIdx === 0 && 'rounded-tl-lg',
                               dayIdx === 6 && 'rounded-tr-lg',
                               dayIdx === days.length - 7 && 'rounded-bl-lg',
                               dayIdx === days.length - 1 && 'rounded-br-lg',
+                              !day.isSelected && day.isCurrentMonth && !day.isToday && !day.hasEvent && 'text-gray-200 bg-gray-50',
+                              !day.isSelected && !day.isCurrentMonth && !day.isToday && 'text-gray-100 bg-gray-50',
                           )}
                       >
                         <time
@@ -457,6 +553,7 @@ export default function Events() {
                                 'mx-auto flex size-7 items-center justify-center rounded-full',
                                 day.isSelected && day.isToday && 'bg-indigo-600',
                                 day.isSelected && !day.isToday && 'bg-gray-900',
+                                day.hasEvent && !day.isSelected && 'bg-animai-organic text-white shadow-lg mask-squircle',
                             )}
                         >
                           {typeof day.date === 'string' ? day.date.split('-').pop()?.replace(/^0/, '') : ''}

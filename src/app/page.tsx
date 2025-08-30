@@ -94,7 +94,7 @@ export default function Home() {
         
         {/* Galeria ANIMAI 2024 - Carrossel Orgânico */}
         {/* Trigger deploy Vercel - Proteções implementadas */}
-        <section className="bg-gradient-to-br from-purple-900/5 via-orange-600/5 to-blue-800/5 py-8 relative overflow-hidden">
+        <section className="bg-gradient-to-b from-animai-organic via-animai-organic/80 via-animai-organic/60 via-animai-organic/40 to-white py-8 relative overflow-hidden">
           <Container>
             <div className="text-center mb-16">
               {/* Navegação no lugar do título */}
@@ -103,7 +103,7 @@ export default function Home() {
                   href="/"
                   className="px-6 py-3 text-base font-medium text-gray-900 hover:text-purple-600 transition-all duration-300 hover-lift rounded-xl bg-gray-50 hover:bg-purple-50 border border-gray-200 hover:border-purple-300"
                 >
-                  INICIO
+                  INÍCIO
                 </Link>
                 <Link
                   href="/o-festival"
@@ -120,9 +120,9 @@ export default function Home() {
               </nav>
               
               {/* Título no lugar da navegação */}
-              <h2 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-purple-600 via-orange-500 to-blue-600 bg-clip-text text-transparent sm:text-5xl mb-6">
-                Festival Baiano de Animação e Games 2025
-              </h2>
+                              <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-6">
+                  VII Festival Baiano de Animação e Games 2025
+                </h2>
               
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Reviva os melhores momentos do ANIMAI através desta galeria especial
@@ -174,7 +174,7 @@ export default function Home() {
                 🗓️ Programação
               </h2>
               <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-                Confira a agenda completa do Festival Baiano de Animação e Games 2025
+                Confira a agenda completa do VII Festival Baiano de Animação e Games 2025
               </p>
             </div>
             

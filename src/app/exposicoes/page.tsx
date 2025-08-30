@@ -225,8 +225,8 @@ export default function Exposicoes() {
         </Link>
       </div>
 
-      {/* Hero Section */}
-      <div className="bg-animai-organic py-16 relative">
+      {/* Hero Section padronizado */}
+      <div className="bg-animai-organic py-2 relative">
         {/* Elementos orgânicos flutuantes */}
         <div className="organic-shapes">
           <div className="organic-shape"></div>
@@ -236,28 +236,14 @@ export default function Exposicoes() {
           <div className="organic-shape"></div>
         </div>
         
-        <Container>
-          <div className="text-center relative z-10">
-            <h1 className="text-3xl font-bold tracking-normal text-white sm:text-4xl mb-6 floating-organic">
-              Exposição Virtual
-            </h1>
-            <p className="mt-6 text-lg text-white/90 max-w-3xl mx-auto">
-              Conheça os artistas e suas obras que fazem parte do Festival Baiano de Animação e Games 2024
-            </p>
-            
-            {/* Informações da Exposição */}
-            <div className="mt-10 max-w-4xl mx-auto">
-              <div className="grid md:grid-cols-2 gap-6 text-left">
-                <div className="space-y-4 backdrop-organic rounded-2xl p-6">
-                  <h3 className="text-lg font-semibold text-white">Técnicas</h3>
-                  <p className="text-white/80">Ilustração digital, 3D, conceitos visuais, cultura baiana, animação, games, arte digital</p>
-                </div>
-                
-                <div className="space-y-4 backdrop-organic rounded-2xl p-6">
-                  <h3 className="text-lg font-semibold text-white">Formato</h3>
-                  <p className="text-white/80">Exposição virtual interativa com galeria de imagens em alta resolução</p>
-                </div>
-              </div>
+        <Container className="relative z-10">
+          <div className="text-center py-4">
+            <div className="floating-organic">
+              <img
+                src="/logo.png"
+                alt="logo"
+                className="h-16 w-auto sm:h-20 md:h-24 lg:h-32 xl:h-36 mx-auto"
+              />
             </div>
           </div>
         </Container>
@@ -268,6 +254,32 @@ export default function Exposicoes() {
         {artistas.map((artista, index) => (
           <div key={artista.id} className={`py-16 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
             <Container>
+              {/* Para o primeiro artista (José David), mostrar o cabeçalho da exposição */}
+              {index === 0 && (
+                <div className="text-center mb-16">
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-6">
+                    Exposição Virtual
+                  </h1>
+                  <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+                    Conheça os artistas e suas obras que fazem parte deste evento especial
+                  </p>
+                  
+                  <div className="max-w-4xl mx-auto mb-16">
+                    <div className="grid md:grid-cols-2 gap-6 text-left">
+                      <div className="space-y-4 backdrop-organic rounded-2xl p-6 bg-white/50 border border-gray-200">
+                        <h3 className="text-lg font-semibold text-gray-900">Técnicas</h3>
+                        <p className="text-gray-600">Ilustração digital, 3D, conceitos visuais, cultura baiana, animação, games, arte digital</p>
+                      </div>
+                      
+                      <div className="space-y-4 backdrop-organic rounded-2xl p-6 bg-white/50 border border-gray-200">
+                        <h3 className="text-lg font-semibold text-gray-900">Formato</h3>
+                        <p className="text-gray-600">Exposição virtual interativa com galeria de imagens em alta resolução</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+
               {/* Cabeçalho do Artista */}
               <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
                 {/* Foto e Bio */}

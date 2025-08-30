@@ -9,11 +9,8 @@ export default function AboutUs() {
     return (
         <div className="overflow-hidden">
             <Container className="pb-24">
-                <Heading as="h2" className="max-w-3xl text-animai-primary">
-                    O Festival
-                </Heading>
                 <p className="mt-6 text-lg/8 text-gray-600 leading-relaxed">
-                    O <span className="font-semibold text-animai-secondary">Animaí!</span> - VI Festival Baiano de Animação e Games é um evento pioneiro no estado com foco em animação e games e uma programação gratuita composta por workshops, palestras, seminários, exposições de artistas ilustradores e mostras competitivas de filmes de animação e jogos eletrônicos. Trata-se de um evento que acontece em Salvador e Itaparica, visando fortalecer o mercado, gerando oportunidades para os produtores e novos olhares do público consumidor, incluindo, também, mostras em espaços culturais da capital e do interior.
+                    O <span className="font-semibold text-animai-secondary">Animaí!</span> - VII Festival Baiano de Animação e Games é um evento pioneiro no estado com foco em animação e games e uma programação gratuita composta por workshops, palestras, seminários, exposições de artistas ilustradores e mostras competitivas de filmes de animação e jogos eletrônicos. Trata-se de um evento que acontece em Salvador e Itaparica, visando fortalecer o mercado, gerando oportunidades para os produtores e novos olhares do público consumidor, incluindo, também, mostras em espaços culturais da capital e do interior.
                 </p>
                 
                 <p className="mt-6 text-lg/8 text-gray-600 leading-relaxed">
