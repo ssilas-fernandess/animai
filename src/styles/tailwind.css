@@ -2,11 +2,280 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes move-x {
+/* Cores baseadas no pôster ANIMAI */
+:root {
+  --color-primary: #8B5CF6; /* Roxo */
+  --color-secondary: #F59E0B; /* Laranja-dourado */
+  --color-accent: #EC4899; /* Rosa */
+  --color-blue: #06B6D4; /* Azul claro */
+  --color-green: #10B981; /* Verde */
+  --color-dark: #1F2937; /* Cinza escuro */
+  --color-light: #F9FAFB; /* Cinza claro */
+}
+
+/* Gradientes orgânicos mais fluidos */
+@keyframes gradient-flow {
   0% {
-    transform: translateX(var(--move-x-from));
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 25%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 0% 75%;
   }
   100% {
-    transform: translateX(var(--move-x-to));
+    background-position: 0% 50%;
   }
+}
+
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  33% {
+    transform: translateY(-10px) rotate(2deg) scale(1.02);
+  }
+  66% {
+    transform: translateY(-5px) rotate(-1deg) scale(0.98);
+  }
+}
+
+@keyframes morph-shape {
+  0%, 100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  25% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  50% {
+    border-radius: 50% 60% 40% 50% / 40% 50% 60% 50%;
+  }
+  75% {
+    border-radius: 70% 30% 60% 40% / 30% 40% 70% 60%;
+  }
+}
+
+@keyframes pulse-organic {
+  0%, 100% {
+    box-shadow: 0 0 25px rgba(139, 92, 246, 0.2);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(139, 92, 246, 0.4);
+    transform: scale(1.05);
+  }
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(10px) translateY(-5px);
+  }
+  50% {
+    transform: translateX(0) translateY(-10px);
+  }
+  75% {
+    transform: translateX(-10px) translateY(-5px);
+  }
+}
+
+/* Classes utilitárias orgânicas melhoradas */
+@layer components {
+  .bg-animai-organic {
+    background: linear-gradient(135deg, 
+      var(--color-primary) 0%, 
+      var(--color-secondary) 20%, 
+      var(--color-accent) 40%, 
+      var(--color-blue) 60%, 
+      var(--color-green) 80%, 
+      var(--color-primary) 100%);
+    background-size: 400% 400%;
+    animation: gradient-flow 12s ease infinite;
+  }
+  
+  .bg-animai-subtle-organic {
+    background: linear-gradient(135deg, 
+      rgba(139, 92, 246, 0.05) 0%, 
+      rgba(245, 158, 11, 0.05) 20%, 
+      rgba(236, 72, 153, 0.05) 40%, 
+      rgba(6, 182, 212, 0.05) 60%, 
+      rgba(16, 185, 129, 0.05) 80%, 
+      rgba(139, 92, 246, 0.05) 100%);
+  }
+  
+  .text-animai-primary {
+    color: var(--color-primary);
+  }
+  
+  .text-animai-secondary {
+    color: var(--color-secondary);
+  }
+  
+  .text-animai-accent {
+    color: var(--color-accent);
+  }
+  
+  .border-animai-organic {
+    border: 2px solid transparent;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary), var(--color-accent)) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+  }
+  
+  .shadow-animai-organic {
+    box-shadow: 
+      0 10px 25px rgba(139, 92, 246, 0.15),
+      0 4px 10px rgba(245, 158, 11, 0.1),
+      0 0 0 1px rgba(255, 255, 255, 0.1);
+  }
+  
+  .hover-lift-organic {
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .hover-lift-organic:hover {
+    transform: translateY(-8px) scale(1.02) rotate(1deg);
+    box-shadow: 
+      0 25px 50px rgba(139, 92, 246, 0.25),
+      0 10px 20px rgba(245, 158, 11, 0.15),
+      0 0 0 1px rgba(255, 255, 255, 0.2);
+  }
+  
+  .floating-organic {
+    animation: float-gentle 6s ease-in-out infinite;
+  }
+  
+  .glow-organic:hover {
+    animation: pulse-organic 3s ease-in-out infinite;
+  }
+  
+  .morph-shape {
+    animation: morph-shape 8s ease-in-out infinite;
+  }
+  
+  .wave-animation {
+    animation: wave 4s ease-in-out infinite;
+  }
+  
+  .backdrop-organic {
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  .organic-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .organic-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Reset completo das linhas antigas */
+.plus-grid-lines,
+[class*="PlusGrid"],
+[class*="plus-grid"] {
+  display: none !important;
+}
+
+/* Melhorias no scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Melhorias na tipografia */
+body {
+  font-feature-settings: 'liga' 1, 'kern' 1;
+  background: linear-gradient(135deg, 
+    rgba(139, 92, 246, 0.02) 0%, 
+    rgba(245, 158, 11, 0.02) 25%, 
+    rgba(236, 72, 153, 0.02) 50%, 
+    rgba(6, 182, 212, 0.02) 75%, 
+    rgba(16, 185, 129, 0.02) 100%);
+}
+
+/* Elementos orgânicos flutuantes melhorados */
+.organic-shapes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.organic-shape {
+  position: absolute;
+  opacity: 0.08;
+  animation: float-gentle 8s ease-in-out infinite;
+}
+
+.organic-shape:nth-child(1) {
+  top: 15%;
+  left: 10%;
+  width: 120px;
+  height: 120px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  animation-delay: 0s;
+  filter: blur(1px);
+}
+
+.organic-shape:nth-child(2) {
+  top: 65%;
+  right: 15%;
+  width: 100px;
+  height: 100px;
+  background: var(--color-secondary);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  animation-delay: 2s;
+  filter: blur(1px);
+}
+
+.organic-shape:nth-child(3) {
+  bottom: 25%;
+  left: 20%;
+  width: 80px;
+  height: 80px;
+  background: var(--color-accent);
+  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+  animation-delay: 4s;
+  filter: blur(1px);
+}
+
+.organic-shape:nth-child(4) {
+  top: 40%;
+  right: 30%;
+  width: 60px;
+  height: 60px;
+  background: var(--color-blue);
+  border-radius: 50% 50% 50% 50% / 60% 40% 60% 40%;
+  animation-delay: 6s;
+  filter: blur(1px);
+}
+
+.organic-shape:nth-child(5) {
+  top: 80%;
+  left: 60%;
+  width: 70px;
+  height: 70px;
+  background: var(--color-green);
+  border-radius: 40% 60% 60% 40% / 40% 60% 40% 60%;
+  animation-delay: 8s;
+  filter: blur(1px);
 }
