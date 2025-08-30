@@ -17,7 +17,7 @@ export default function AboutUs() {
                 </p>
                 
                 <p className="mt-6 text-lg/8 text-gray-600 leading-relaxed">
-                    "Trata-se de um evento que acontece em Salvador e Itaparica, visando fortalecer o mercado, gerando oportunidades para os produtores e novos olhares do público consumidor, incluindo, também, mostras em espaços culturais da capital e do interior", explica <span className="font-semibold text-animai-accent">Aline Cléa</span>, produtora da Cine Arts, diretora geral do Animaí e uma das curadoras do evento ao lado de <span className="font-semibold text-animai-accent">Anderson Soares</span> e <span className="font-semibold text-animai-accent">Léo Silva</span>, da Mantra Filmes.
+                    &ldquo;Trata-se de um evento que acontece em Salvador e Itaparica, visando fortalecer o mercado, gerando oportunidades para os produtores e novos olhares do público consumidor, incluindo, também, mostras em espaços culturais da capital e do interior&rdquo;, explica <span className="font-semibold text-animai-accent">Aline Cléa</span>, produtora da Cine Arts, diretora geral do Animaí e uma das curadoras do evento ao lado de <span className="font-semibold text-animai-accent">Anderson Soares</span> e <span className="font-semibold text-animai-accent">Léo Silva</span>, da Mantra Filmes.
                 </p>
                 
                 <div className="mt-8">
