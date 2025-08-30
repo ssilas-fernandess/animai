@@ -167,19 +167,19 @@ export default function Home() {
         </section>
 
         {/* Seção de Programação */}
-        <section className="bg-white py-20 relative overflow-hidden">
+        <section className="bg-white py-12 sm:py-16 md:py-20 relative overflow-hidden">
           <Container>
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-6">
-                Programação
+            <div className="text-center mb-8 sm:mb-12 md:mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 mb-4 sm:mb-6">
+                🗓️ Programação
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
                 Confira a agenda completa do Festival Baiano de Animação e Games 2025
               </p>
             </div>
             
             {/* Componente do Calendário */}
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-3xl lg:max-w-4xl mx-auto px-4">
               <Events />
             </div>
           </Container>
