@@ -93,6 +93,7 @@ export default function Home() {
       <main>
         
         {/* Galeria ANIMAI 2024 - Carrossel Orgânico */}
+        {/* Trigger deploy Vercel - Proteções implementadas */}
         <section className="bg-gradient-to-br from-purple-900/5 via-orange-600/5 to-blue-800/5 py-8 relative overflow-hidden">
           <Container>
             <div className="text-center mb-16">
