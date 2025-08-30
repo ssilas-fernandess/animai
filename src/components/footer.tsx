@@ -58,7 +58,7 @@ function SocialLinks() {
         <SocialIconWhatsApp className="size-5"/>
       </Link>
       <Link
-        href="https://www.instagram.com/animai.festival"
+        href="https://www.instagram.com/animai.festival?igsh=Z2F2dTJzZWZtbGFm"
         target="_blank"
         aria-label="Nos visite no Instagram"
         className="text-white hover:text-animai-secondary transition-colors duration-300 hover-lift-organic"
