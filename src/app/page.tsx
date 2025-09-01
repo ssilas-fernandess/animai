@@ -90,6 +90,14 @@ export default function Home() {
   return (
     <div className="bg-white">
       <Hero />
+      
+      {/* Brands/Logo Cloud - Conteúdo 2024 */}
+      <section className="py-8 bg-white">
+        <Container>
+          <LogoCloud />
+        </Container>
+      </section>
+      
       <main>
         
         {/* Galeria ANIMAI 2024 - Carrossel Orgânico */}
@@ -120,9 +128,9 @@ export default function Home() {
               </nav>
               
               {/* Título no lugar da navegação */}
-                              <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-6">
-                  VII Festival Baiano de Animação e Games 2025
-                </h2>
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight text-gray-900 mb-3 sm:mb-4 md:mb-6 px-4">
+                VI Festival Baiano de Animação e Games 2024
+              </h2>
               
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Reviva os melhores momentos do ANIMAI através desta galeria especial
@@ -174,7 +182,7 @@ export default function Home() {
                 🗓️ Programação
               </h2>
               <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-                Confira a agenda completa do VII Festival Baiano de Animação e Games 2025
+                Confira a agenda completa do Festival Baiano de Animação e Games 2024
               </p>
             </div>
             

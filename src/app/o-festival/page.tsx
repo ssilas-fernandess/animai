@@ -7,7 +7,7 @@ import AboutUs from "@/components/about-us";
 
 export const metadata: Metadata = {
   title: 'O Festival - Animai',
-  description: 'Conheça o VII Festival Baiano de Animação e Games 2025 - ANIMAI',
+  description: 'Conheça o Festival Baiano de Animação e Games 2024 - ANIMAÍ',
 }
 
 export default function SobreFestival() {
@@ -55,14 +55,14 @@ export default function SobreFestival() {
             O Festival
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-10">
-            Descubra tudo sobre o VII Festival Baiano de Animação e Games 2025
+            Descubra tudo sobre o VI Festival Baiano de Animação e Games 2024
           </p>
           
           <div className="max-w-4xl mx-auto mb-16">
             <div className="grid md:grid-cols-3 gap-6 text-left">
               <div className="space-y-4 backdrop-organic rounded-2xl p-6 bg-white/50 border border-gray-200">
                 <h3 className="text-lg font-semibold text-gray-900">Data</h3>
-                <p className="text-gray-600">08 - 25 de outubro de 2025</p>
+                <p className="text-gray-600">05 - 08 de dezembro de 2024</p>
               </div>
               
               <div className="space-y-4 backdrop-organic rounded-2xl p-6 bg-white/50 border border-gray-200">

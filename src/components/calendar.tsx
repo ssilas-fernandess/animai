@@ -349,8 +349,8 @@ export default function Events() {
       return acc;
     }, []);
 
-    const [currentMonth, setCurrentMonth] = useState(10); // Outubro
-    const [currentYear, setCurrentYear] = useState(2025);
+    const [currentMonth, setCurrentMonth] = useState(12); // Dezembro
+    const [currentYear, setCurrentYear] = useState(2024);
 
     const monthNames = [
       'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
@@ -375,9 +375,9 @@ export default function Events() {
       }
     };
 
-    const goToOctober2025 = () => {
-      setCurrentMonth(10);
-      setCurrentYear(2025);
+    const goToDecember2024 = () => {
+      setCurrentMonth(12);
+      setCurrentYear(2024);
     };
 
     const generateDaysForMonth = (month: number, year: number) => {
@@ -404,7 +404,7 @@ export default function Events() {
       for (let day = 1; day <= lastDay.getDate(); day++) {
         const date = new Date(year, month - 1, day);
         const dateString = date.toISOString().split('T')[0];
-        const isEventDay = month === 10 && year === 2025 && day >= 8 && day <= 25;
+        const isEventDay = month === 12 && year === 2024 && day >= 5 && day <= 8;
         
         days.push({
           date: dateString,
@@ -431,7 +431,7 @@ export default function Events() {
       return days;
     };
 
-    const [days, setDays] = useState(generateDaysForMonth(10, 2025));
+    const [days, setDays] = useState(generateDaysForMonth(12, 2024));
 
     useEffect(() => {
       setDays(generateDaysForMonth(currentMonth, currentYear));
@@ -494,14 +494,14 @@ export default function Events() {
                     <h3 className="text-xl font-semibold text-gray-900">
                       {monthNames[currentMonth - 1]} {currentYear}
                     </h3>
-                    {currentMonth !== 10 || currentYear !== 2025 ? (
-                      <button
-                        onClick={goToOctober2025}
-                        className="text-sm text-purple-600 hover:text-purple-800 mt-1 underline"
-                      >
-                        Voltar para Outubro 2025
-                      </button>
-                    ) : null}
+                                         {currentMonth !== 12 || currentYear !== 2024 ? (
+                       <button
+                         onClick={goToDecember2024}
+                         className="text-sm text-purple-600 hover:text-purple-800 mt-1 underline"
+                       >
+                         Voltar para Dezembro 2024
+                       </button>
+                     ) : null}
                   </div>
                   
                   <button

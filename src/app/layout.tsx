@@ -5,7 +5,7 @@ import {Navbar} from "@/components/navbar";
 export const metadata: Metadata = {
   title: {
     template: '%s - Animai',
-    default: 'Animai - VII Festival Baiano de Animação e Games 2025',
+    default: 'Animai - Festival Baiano de Animação e Games 2024',
   },
 }
 
