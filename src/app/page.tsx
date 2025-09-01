@@ -11,8 +11,8 @@ import { Button } from '@/components/button'
 import AboutUs from '@/components/about-us'
 import Link from 'next/link'
 
-// Array com todas as fotos do ANIMAI 2024
-const animaiPhotos = [
+// Array com todas as fotos do ANIMAI 2024 (sem duplicatas)
+const allPhotos = [
   '/arts/animai-2024-01.jpg',
   '/arts/animai-2024-02.jpg',
   '/arts/animai-2024-03.jpg',
@@ -58,8 +58,28 @@ const animaiPhotos = [
   '/arts/animai-2024-43.jpg',
   '/arts/animai-2024-44.jpg',
   '/arts/animai-2024-45.jpg',
-  '/arts/animai-2024-46.jpg'
+  '/arts/animai-2024-46.jpg',
+  // Novas imagens adicionadas
+  '/arts/DK9A5963.JPG',
+  '/arts/DK9A6609.JPG',
+  '/arts/DK9A7346.JPG',
+  '/arts/DK9A7371.JPG',
+  '/arts/DK9A7528.JPG',
+  '/arts/DK9A7660.JPG',
+  '/arts/DK9A7676.JPG',
+  '/arts/DSC02455.jpg',
+  '/arts/DSC02594.jpg',
+  '/arts/DSC04356.jpg',
+  '/arts/IMG_1402.JPG',
+  '/arts/IMG_1411.JPG',
+  '/arts/IMG_1645.JPG',
+  '/arts/IMG_1942.JPG',
+  '/arts/IMG_2078.JPG',
+  '/arts/IMG_2099.JPG'
 ]
+
+// Remove duplicatas automaticamente
+const animaiPhotos = [...new Set(allPhotos)]
 
 export default function Home() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
